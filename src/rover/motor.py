@@ -26,7 +26,7 @@ class Motor:
 
     @staticmethod
     def apply_signed_speed_threshold(speed: SignedSpeed) -> SignedSpeed:
-        return max(0, min(speed, Motor.ABSOLUTE_MAX_SPEED))
+        return max(-Motor.ABSOLUTE_MAX_SPEED, min(speed, Motor.ABSOLUTE_MAX_SPEED))
 
     def forward(self, speed: UnsignedSpeed):
         self._set_speed(speed)
@@ -44,7 +44,9 @@ class Motor:
         register = Motor._BASE_REGISTER + self._ID
         self.speed = speed
 
-        speed = speed if self._POLARITY else -speed
+        if not self._POLARITY:
+            speed = -speed
+
         with SMBus(constants.I2C_BUS) as bus:
 
             def f() -> None:
