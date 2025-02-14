@@ -50,8 +50,8 @@ class CameraServoIds(typing.TypedDict):
 
 
 CAMERA_SERVOS: CameraServoIds = {
-    "pan": 0,
-    "tilt": 1
+    "pan": 1,
+    "tilt": 2
 }
 
 
