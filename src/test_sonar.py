@@ -1,7 +1,7 @@
-import typing
+from rover.sonar import Sonar
+import time
 
-
-class Sonar:
-
-    _I2C_ADDR: typing.ClassVar[int] = 0x77
-    _BASE_REGISTER: typing.ClassVar[int] = 31
+sonar = Sonar()
+while True:
+    print(sonar.get_distance())
+    time.sleep(1)

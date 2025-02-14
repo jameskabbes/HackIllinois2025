@@ -1,4 +1,4 @@
-from rover.vehicle import Vehicle
+from rover.battery import Battery
 
-v = Vehicle()
-print(v.battery.get_voltage())
+battery = Battery()
+print('Battery voltage: ' + str(battery.get_voltage()))
