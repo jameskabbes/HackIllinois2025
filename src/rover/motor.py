@@ -20,23 +20,9 @@ class Motor:
     _POLARITY: int
     speed: SignedSpeed
 
-    def __init__(self, position: Position, side: Side):
-
-        self.speed = 0
-        if position == 'front':
-            if side == 'left':
-                self._ID = 0
-                self._POLARITY = False
-            elif side == 'right':
-                self._ID = 1
-                self._POLARITY = True
-        elif position == 'rear':
-            if side == 'left':
-                self._ID = 2
-                self._POLARITY = False
-            elif side == 'right':
-                self._ID = 3
-                self._POLARITY = True
+    def __init__(self, _ID: int, _POLARITY: int) -> None:
+        self._ID = _ID
+        self._POLARITY = _POLARITY
 
     @staticmethod
     def apply_signed_speed_threshold(speed: SignedSpeed) -> SignedSpeed:
@@ -53,7 +39,8 @@ class Motor:
 
     def _set_speed(self, speed: SignedSpeed):
 
-        thresholded_speed = Motor.apply_signed_speed_threshold(speed)
+        # apply threshold
+        speed = Motor.apply_signed_speed_threshold(speed)
         register = Motor._BASE_REGISTER + self._ID
         self.speed = speed
 
