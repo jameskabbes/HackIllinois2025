@@ -18,11 +18,11 @@ class Vehicle:
 
     def __init__(self):
 
-        self.buzzer = gpiozero.Buzzer(31)
+        self.buzzer = gpiozero.Buzzer('BOARD31')
         self.battery = Battery()
         self.drivetrain = Drivetrain()
-        # self.key1 = gpiozero.Button(33, pull_up=True)
-        # self.key2 = gpiozero.Button(35, pull_up=True)
+        self.key1 = gpiozero.Button(13, pull_up=True)
+        self.key2 = gpiozero.Button(23, pull_up=True)
 
         self.infrared_array = InfraredArray()
         self.sonar = Sonar()
