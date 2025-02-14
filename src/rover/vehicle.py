@@ -19,7 +19,7 @@ class Vehicle:
 
     def __init__(self):
 
-        self.buzzer = gpiozero.Buzzer('BOARD31')
+        self.buzzer = gpiozero.Buzzer(constants.BUZZER_PIN)
         self.battery = Battery()
         self.drivetrain = Drivetrain()
         self.key1 = gpiozero.Button(constants.KEY_PINS['key1'])

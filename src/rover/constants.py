@@ -64,3 +64,5 @@ KEY_PINS: KeyPins = {
     "key1": 13,
     "key2": 23
 }
+
+BUZZER_PIN: gpiozero.Pin = 'BOARD31'
