@@ -1,4 +1,2 @@
-# DO NOT CHANGE ANYTHING IN THIS FILE!
-
-I2C = 1
-I2C_ADDR = 0x7A  # hexadecimal for 122
+I2C_BUS = 1
+N_SERVOS = 6

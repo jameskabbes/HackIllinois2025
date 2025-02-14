@@ -11,14 +11,18 @@ Side = typing.Literal['left', 'right']
 
 class Motor:
 
+    _I2C_ADDR: typing.ClassVar[int] = 0x7A
+    _BASE_REGISTER: typing.ClassVar[int] = 31
+
     ABSOLUTE_MAX_SPEED: typing.ClassVar[int] = 100
-    __ADDR: typing.ClassVar[int] = 31
 
     _ID: int
     _POLARITY: int
+    speed: SignedSpeed
 
     def __init__(self, position: Position, side: Side):
 
+        self.speed = 0
         if position == 'front':
             if side == 'left':
                 self._ID = 0
@@ -47,10 +51,18 @@ class Motor:
 
     def _set_speed(self, speed: SignedSpeed):
 
-        reg = Motor.__ADDR + self._ID
-        speed = speed if self._POLARITY else -speed
+        register = Motor._BASE_REGISTER + self._ID
+        self.speed = speed
 
-        with SMBus(constants.I2C) as bus:
-            msg = i2c_msg.write(constants.I2C_ADDR, [
-                                self._ID, speed, self._POLARITY])
-            bus.i2c_rdwr(msg)
+        speed = speed if self._POLARITY else -speed
+        with SMBus(constants.I2C_BUS) as bus:
+
+            def f() -> None:
+                msg = i2c_msg.write(
+                    self._I2C_ADDR, [register, speed.to_bytes(1, 'little', signed=True)[0]])
+                bus.i2c_rdwr(msg)
+
+            try:
+                f()
+            except:
+                f()

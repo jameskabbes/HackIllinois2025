@@ -1,9 +1,9 @@
+from smbus2 import SMBus, i2c_msg
+import HiwonderSDK.Board as Board
+import time
 import os
 import sys
 sys.path.append('/home/pi/TurboPi/')
-import time
-import HiwonderSDK.Board as Board
-from smbus2 import SMBus, i2c_msg
 
 # 幻尔科技iic超声波库
 
@@ -11,8 +11,9 @@ if sys.version_info.major == 2:
     print('Please run this program with python3!')
     sys.exit(0)
 
+
 class Sonar:
-    __units = {"mm":0, "cm":1}
+    __units = {"mm": 0, "cm": 1}
     __dist_reg = 0
 
     __RGB_MODE = 2
@@ -29,10 +30,11 @@ class Sonar:
     __RGB2_R_BREATHING_CYCLE = 12
     __RGB2_G_BREATHING_CYCLE = 13
     __RGB2_B_BREATHING_CYCLE = 14
+
     def __init__(self):
         self.i2c_addr = 0x77
         self.i2c = 1
-        self.Pixels = [0,0]
+        self.Pixels = [0, 0]
         self.RGBMode = 0
 
     def __getattr(self, attr):
@@ -41,7 +43,7 @@ class Sonar:
         if attr == "Distance":
             return self.getDistance()
         else:
-            raise AttributeError('Unknow attribute : %s'%attr)
+            raise AttributeError('Unknow attribute : %s' % attr)
 
     def setRGBMode(self, mode):
         try:
@@ -50,7 +52,7 @@ class Sonar:
         except BaseException as e:
             print(e)
 
-    def show(self): #占位，与扩展板RGB保持调用一致
+    def show(self):  # 占位，与扩展板RGB保持调用一致
         pass
 
     def numPixels(self):
@@ -59,11 +61,13 @@ class Sonar:
     def setPixelColor(self, index, rgb):
         try:
             if index != 0 and index != 1:
-                return 
+                return
             start_reg = 3 if index == 0 else 6
             with SMBus(self.i2c) as bus:
-                bus.write_byte_data(self.i2c_addr, start_reg, 0xFF & (rgb >> 16))
-                bus.write_byte_data(self.i2c_addr, start_reg+1, 0xFF & (rgb >> 8))
+                bus.write_byte_data(
+                    self.i2c_addr, start_reg, 0xFF & (rgb >> 16))
+                bus.write_byte_data(
+                    self.i2c_addr, start_reg+1, 0xFF & (rgb >> 8))
                 bus.write_byte_data(self.i2c_addr, start_reg+2, 0xFF & rgb)
                 self.Pixels[index] = rgb
         except BaseException as e:
@@ -91,12 +95,12 @@ class Sonar:
 
     def startSymphony(self):
         self.setRGBMode(1)
-        self.setBreathCycle(1,0, 2000)
-        self.setBreathCycle(1,1, 3300)
-        self.setBreathCycle(1,2, 4700)
-        self.setBreathCycle(2,0, 4600)
-        self.setBreathCycle(2,1, 2000)
-        self.setBreathCycle(2,2, 3400)
+        self.setBreathCycle(1, 0, 2000)
+        self.setBreathCycle(1, 1, 3300)
+        self.setBreathCycle(1, 2, 4700)
+        self.setBreathCycle(2, 0, 4600)
+        self.setBreathCycle(2, 1, 2000)
+        self.setBreathCycle(2, 2, 3400)
 
     def getDistance(self):
         dist = 99999
@@ -106,12 +110,14 @@ class Sonar:
                 bus.i2c_rdwr(msg)
                 read = i2c_msg.read(self.i2c_addr, 2)
                 bus.i2c_rdwr(read)
-                dist = int.from_bytes(bytes(list(read)), byteorder='little', signed=False)
+                dist = int.from_bytes(
+                    bytes(list(read)), byteorder='little', signed=False)
                 if dist > 5000:
                     dist = 5000
         except BaseException as e:
             print(e)
         return dist
+
 
 if __name__ == '__main__':
     s = Sonar()
@@ -136,4 +142,3 @@ if __name__ == '__main__':
     while True:
         time.sleep(1)
         print(s.getDistance())
-
