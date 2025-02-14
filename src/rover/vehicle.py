@@ -1,4 +1,5 @@
 import gpiozero
+from rover import constants
 from rover.battery import Battery
 from rover.drivetrain import Drivetrain
 from rover.infrared_array import InfraredArray
@@ -21,8 +22,8 @@ class Vehicle:
         self.buzzer = gpiozero.Buzzer('BOARD31')
         self.battery = Battery()
         self.drivetrain = Drivetrain()
-        self.key1 = gpiozero.Button(13, pull_up=True)
-        self.key2 = gpiozero.Button(23, pull_up=True)
+        self.key1 = gpiozero.Button(constants.KEY_PINS['key1'])
+        self.key2 = gpiozero.Button(constants.KEY_PINS['key2'])
 
         self.infrared_array = InfraredArray()
         self.sonar = Sonar()

@@ -1,7 +1,6 @@
-import typing
-
 from rover.servo import Servo
 from rover.camera import Camera
+from rover import constants
 
 
 class CameraSystem:
@@ -11,6 +10,6 @@ class CameraSystem:
     camera: Camera
 
     def __init__(self):
-        self.pan_servo = Servo(1)
-        self.tilt_servo = Servo(2)
+        self.pan_servo = Servo(constants.CAMERA_SERVOS['pan'])
+        self.tilt_servo = Servo(constants.CAMERA_SERVOS['tilt'])
         self.camera = Camera()

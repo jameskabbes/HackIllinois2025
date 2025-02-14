@@ -1,3 +1,4 @@
+import gpiozero
 import typing
 
 I2C_BUS = 1
@@ -40,4 +41,26 @@ DRIVETRAIN: DrivetrainConfig = {
             "_POLARITY": True
         }
     }
+}
+
+
+class CameraServoIds(typing.TypedDict):
+    pan: int
+    tilt: int
+
+
+CAMERA_SERVOS: CameraServoIds = {
+    "pan": 0,
+    "tilt": 1
+}
+
+
+class KeyPins(typing.TypedDict):
+    key1: gpiozero.Pin
+    key2: gpiozero.Pin
+
+
+KEY_PINS: KeyPins = {
+    "key1": 13,
+    "key2": 23
 }
