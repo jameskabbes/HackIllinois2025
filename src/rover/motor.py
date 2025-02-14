@@ -42,14 +42,19 @@ class Motor:
     def apply_signed_speed_threshold(speed: SignedSpeed) -> SignedSpeed:
         return max(0, min(speed, Motor.ABSOLUTE_MAX_SPEED))
 
-    def set_speed(self, speed: UnsignedSpeed, forward: bool):
-        thresholded_speed = Motor.apply_signed_speed_threshold(speed)
-        if not forward:
-            thresholded_speed = -thresholded_speed
+    def forward(self, speed: UnsignedSpeed):
+        self._set_speed(speed)
 
-        self._set_speed(thresholded_speed)
+    def reverse(self, speed: UnsignedSpeed):
+        self._set_speed(-speed)
+
+    def stop(self):
+        self._set_speed(0)
 
     def _set_speed(self, speed: SignedSpeed):
+
+        thresholded_speed = Motor.apply_signed_speed_threshold(speed)
+        self._set_speed(thresholded_speed)
 
         register = Motor._BASE_REGISTER + self._ID
         self.speed = speed
