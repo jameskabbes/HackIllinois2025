@@ -1,13 +1,25 @@
 from rover import motor
 import time
 
-fl_motor = motor.Motor('front', 'left')
+fl_motor = motor.Motor('rear', 'right')
 
 
-for i in range(0, 110, 10):
-    fl_motor.set_speed(i, True)
-    time.sleep(0.5)
+for i in range(0, 101):
+    fl_motor._set_speed(i)
+    time.sleep(0.01)
 
-for i in range(100, -10, 10):
-    fl_motor.set_speed(i, True)
-    time.sleep(0.5)
+for i in range(99, -1, -1):
+    fl_motor._set_speed(i)
+    time.sleep(0.01)
+
+for i in range(0, 101):
+    fl_motor._set_speed(-i)
+    time.sleep(0.01)
+
+for i in range(99, -1, -1):
+    fl_motor._set_speed(-i)
+    time.sleep(0.01)
+
+
+
+fl_motor.stop()
