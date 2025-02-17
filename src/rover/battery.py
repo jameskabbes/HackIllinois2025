@@ -11,7 +11,7 @@ class Battery:
     def __init__(self):
         pass
 
-    def get_voltage(self) -> int:
+    def get_voltage(self) -> float:
         ret: int = 0
         with SMBus(constants.I2C_BUS) as bus:
 
@@ -27,4 +27,4 @@ class Battery:
             except:
                 ret = f()
 
-        return ret
+        return ret / 1000.0
