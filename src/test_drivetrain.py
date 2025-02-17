@@ -1,4 +1,5 @@
 from rover.drivetrain import Drivetrain
+from rover.motor import Motor
 import time
 import signal
 
@@ -16,34 +17,50 @@ if __name__ == '__main__':
 
     signal.signal(signal.SIGINT, signal_handler)
 
-    print('front left motor forward')
-    drivetrain.front_left_motor.forward(50)
-    time.sleep(1)
-    print('front left motor reverse')
-    drivetrain.front_left_motor.reverse(50)
-    time.sleep(1)
-    drivetrain.front_left_motor.stop()
+    print('forward')
+    drivetrain.set_motion(speed=100, heading=90)
+    time.sleep(2)
 
-    print('front right motor forward')
-    drivetrain.front_right_motor.forward(50)
-    time.sleep(1)
-    print('front right motor reverse')
-    drivetrain.front_right_motor.reverse(50)
-    time.sleep(1)
-    drivetrain.front_right_motor.stop()
+    print('reverse')
+    drivetrain.set_motion(speed=100, heading=270)
+    time.sleep(2)
 
-    print('rear left motor forward')
-    drivetrain.rear_left_motor.forward(50)
-    time.sleep(1)
-    print('rear left motor reverse')
-    drivetrain.rear_left_motor.reverse(50)
-    time.sleep(1)
-    drivetrain.rear_left_motor.stop()
+    print('strafe right')
+    drivetrain.set_motion(speed=100, heading=0)
+    time.sleep(2)
 
-    print('rear right motor forward')
-    drivetrain.rear_right_motor.forward(50)
-    time.sleep(1)
-    print('rear right motor reverse')
-    drivetrain.rear_right_motor.reverse(50)
-    time.sleep(1)
-    drivetrain.rear_right_motor.stop()
+    print('strafe left')
+    drivetrain.set_motion(speed=100, heading=180)
+    time.sleep(2)
+
+    print('45 heading')
+    drivetrain.set_motion(speed=100, heading=45)
+    time.sleep(2)
+
+    print('315 heading')
+    drivetrain.set_motion(speed=100, heading=315)
+    time.sleep(2)
+
+    print('225 heading')
+    drivetrain.set_motion(speed=100, heading=225)
+    time.sleep(2)
+
+    print('135 heading')
+    drivetrain.set_motion(speed=100, heading=135)
+    time.sleep(2)
+
+    print('rotate counter-clockwise')
+    drivetrain.set_motion(angular_speed=100)
+    time.sleep(2)
+
+    print('rotate clockwise')
+    drivetrain.set_motion(angular_speed=-100)
+    time.sleep(2)
+
+    print('drift1')
+    drivetrain.set_motion(speed=100, heading=180, angular_speed=100)
+    time.sleep(5)
+
+    print('drift2')
+    drivetrain.set_motion(speed=100, heading=0, angular_speed=-100)
+    time.sleep(5)

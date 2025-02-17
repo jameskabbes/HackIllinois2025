@@ -1,12 +1,6 @@
 import typing
 from smbus2 import SMBus, i2c_msg
-from rover import constants
-
-UnsignedSpeed = int
-SignedSpeed = int
-
-Position = typing.Literal['front', 'rear']
-Side = typing.Literal['left', 'right']
+from rover import constants, types
 
 
 class Motor:
@@ -14,47 +8,42 @@ class Motor:
     _I2C_ADDR: typing.ClassVar[int] = 0x7A
     _BASE_REGISTER: typing.ClassVar[int] = 31
 
-    ABSOLUTE_MAX_SPEED: typing.ClassVar[int] = 100
-
     _ID: int
     _POLARITY: int
-    speed: SignedSpeed
+    _FORCE_HEADING: types.Heading
+    speed: types.SignedSpeed
 
-    def __init__(self, _ID: int, _POLARITY: int) -> None:
-        self._ID = _ID
-        self._POLARITY = _POLARITY
+    def __init__(self, config: types.MotorConfig) -> None:
+        self._ID = config['_ID']
+        self._POLARITY = config['_POLARITY']
+        self._FORCE_HEADING = config['_FORCE_HEADING']
 
-    @staticmethod
-    def apply_signed_speed_threshold(speed: SignedSpeed) -> SignedSpeed:
-        return max(-Motor.ABSOLUTE_MAX_SPEED, min(speed, Motor.ABSOLUTE_MAX_SPEED))
+    def forward(self, speed: types.UnsignedSpeed):
+        self.set_speed(speed)
 
-    def forward(self, speed: UnsignedSpeed):
-        self._set_speed(speed)
-
-    def reverse(self, speed: UnsignedSpeed):
-        self._set_speed(-speed)
+    def reverse(self, speed: types.UnsignedSpeed):
+        self.set_speed(-speed)
 
     def stop(self):
-        self._set_speed(0)
+        self.set_speed(0)
 
-    def _set_speed(self, speed: SignedSpeed):
-
-        # apply threshold
-        speed = Motor.apply_signed_speed_threshold(speed)
-        register = Motor._BASE_REGISTER + self._ID
+    def set_speed(self, speed: types.SignedSpeed):
+        self._write_speed(speed)
         self.speed = speed
+
+    def _write_speed(self, speed: types.SignedSpeed):
+        register = Motor._BASE_REGISTER + self._ID
 
         if not self._POLARITY:
             speed = -speed
 
-        with SMBus(constants.I2C_BUS) as bus:
+        # with SMBus(constants.I2C_BUS) as bus:
 
-            def f() -> None:
-                msg = i2c_msg.write(
-                    self._I2C_ADDR, [register, speed.to_bytes(1, 'little', signed=True)[0]])
-                bus.i2c_rdwr(msg)
-
-            try:
-                f()
-            except:
-                f()
+        #     def f() -> None:
+        #         msg = i2c_msg.write(
+        #             self._I2C_ADDR, [register, speed.to_bytes(1, 'little', signed=True)[0]])
+        #         bus.i2c_rdwr(msg)
+        #     try:
+        #         f()
+        #     except:
+        #         f()
