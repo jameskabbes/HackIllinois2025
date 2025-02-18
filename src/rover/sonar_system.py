@@ -44,13 +44,6 @@ class SonarSystem:
         except BaseException as e:
             print(e)
 
-    def getPixelColor(self, index):
-        if index != 0 and index != 1:
-            raise ValueError("Invalid pixel index", index)
-        return ((self.Pixels[index] >> 16) & 0xFF,
-                (self.Pixels[index] >> 8) & 0xFF,
-                self.Pixels[index] & 0xFF)
-
     def setBreathCycle(self, index, rgb, cycle):
         try:
             if index != 0 and index != 1:
