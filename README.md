@@ -28,6 +28,7 @@ John Deere | HackIllinois 2025
   - [Integrity](#integrity)
   - [Jackson Innovation Studio](#jackson-innovation-studio)
 - [Kits](#kits)
+- [Side Quest - Fastest Line Follower](#side-quest---fastest-line-follower)
 - [Raspberry Pi](#raspberry-pi)
 
   - [Setup Instructions](#setup-instructions)
@@ -135,17 +136,36 @@ John Deere engineers who work on autonomous systems professionally will be prese
 
 The Jackson Innovation Studio is located in the basement of the Sidney Lu Mechanical Engineering Building at [1206 W Green St, Urbana, IL 61801, Room 0100](https://maps.app.goo.gl/Gp97vbMnAPboCCGY8)
 
+## Awards
+
+- 1st place
+- Honorable mention
+- Most Creative Solution
+- [Side Quest Champion - Fastest Line Follower](#side-quest---fastest-line-follower)
+
+## Prizes
+
+- 1st place: Additional Raspberry Pi 4B and vehicle kit for all team members
+- All award winners: One team will be selected to present their solution at [AgTech Summit](https://researchpark.illinois.edu/all-events/agtechsummit/)
+
+# Side Quest - Fastest Line Follower
+
+TBD
+
+fill out information regarding the fastest line follower side quest
+
+- black tape on white floor
+- showcase left/right signage (colors, words, arrows, etc.)
+
 # Kits
 
-There are five possible kits in this prompt.
-
-| Name                          | Assembled Kit                                           | Solution Requirements       | Quantity |
-| ----------------------------- | ------------------------------------------------------- | --------------------------- | -------- |
-| [The Boombox][boombox_branch] | ![The Boombox](./images/assembled_kits/the_boombox.png) | - camera, speaker           | 10       |
-| [The Claw][claw_branch]       | ![The Claw](./images/assembled_kits/the_claw.png)       | - camera, the claw          | 6        |
-| [The Rover][rover_branch]     | ![The Rover](./images/assembled_kits/the_rover.png)     | - camera, strafe capability | 7        |
-| [The Scout][scout_branch]     | ![The Scout](./images/assembled_kits/the_scout.png)     | - camera, ultrasonic        | 1        |
-| [The Trike][trike_branch]     | ![The Trike](./images/assembled_kits/the_trike.png)     | - camera, all servo motors  | 7        |
+| Name                          | Assembled Kit                                           | Solution Requirements          | Kit Quantity |
+| ----------------------------- | ------------------------------------------------------- | ------------------------------ | ------------ |
+| [The Boombox][boombox_branch] | ![The Boombox](./images/assembled_kits/the_boombox.png) | - camera, both servos, speaker | 10           |
+| [The Claw][claw_branch]       | ![The Claw](./images/assembled_kits/the_claw.png)       | - camera, the claw             | 6            |
+| [The Rover][rover_branch]     | ![The Rover](./images/assembled_kits/the_rover.png)     | - camera, strafe capability    | 7            |
+| [The Scout][scout_branch]     | ![The Scout](./images/assembled_kits/the_scout.png)     | - camera, ultrasonic           | 1            |
+| [The Trike][trike_branch]     | ![The Trike](./images/assembled_kits/the_trike.png)     | - camera, all servo motors     | 7            |
 
 # Raspberry Pi
 
