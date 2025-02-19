@@ -110,7 +110,7 @@ To be considered for awards, submissions must contain:
   - Codebase
   - Problem description
   - Solution explanation
-- Video of the vehicle working
+  - Video of the vehicle working
 - A functioning vehicle during a 5-minute live demo on Sunday, March 2nd
 
 ## Scoring Criteria
