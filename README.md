@@ -169,6 +169,16 @@ Click on the link for each kit to read more about it, the kit-specific prompt re
 | [The Scout][scout_branch]     | ![The Scout](./images/assembled_kits/the_scout.png)     | - camera, ultrasonic           | 1            |
 | [The Trike][trike_branch]     | ![The Trike](./images/assembled_kits/the_trike.png)     | - camera, all servo motors     | 7            |
 
+| Detail                            | [The Boombox][boombox_branch] | [The Claw][claw_branch] | [The Rover][rover_branch] | [The Scout][scout_branch] | [The Trike][trike_branch] | Item Description                                              |
+| --------------------------------- | ----------------------------- | ----------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------------------------------------------- |
+| Motors (quantity)                 | 2                             | 2                       | 4                         | 2                         | 2                         | Quantity of electric motors used to power the drivetrain      |
+| Drivetrain classification         | front-steering                | tank tracks             | omnidirectional           | tank tracks               | front-steering            | Type of drivetrain mechanism used                             |
+| Camera                            |                               |                         |                           |                           |                           |                                                               |
+| Servo Motors (quantity)           | 3                             | 2                       | 2                         | 3                         | 3                         | control a gear's orientation with electrical signals          |
+| Ultrasonic Sensors (quantity)     | 0                             | 0                       | 1                         | 1                         | 1                         | detect a object's distance with sonar                         |
+| Audio                             | **Speaker** / Microphone      |                         |                           |                           |                           | Presence of audio components such as speakers or microphones  |
+| Line Following Sensors (quantity) |                               |                         |                           |                           |                           | Quantity of infrared line-following / cliff detection sensors |
+
 # Raspberry Pi
 
 A tiny computer in the palm of your hand. [raspberrypi.com](https://www.raspberrypi.com/)
