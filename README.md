@@ -159,6 +159,8 @@ fill out information regarding the fastest line follower side quest
 
 # Kits
 
+Click on the link for each kit to read more about it, the kit-specific prompt requirements, and setup instructions.
+
 | Name                          | Assembled Kit                                           | Solution Requirements          | Kit Quantity |
 | ----------------------------- | ------------------------------------------------------- | ------------------------------ | ------------ |
 | [The Boombox][boombox_branch] | ![The Boombox](./images/assembled_kits/the_boombox.png) | - camera, both servos, speaker | 10           |
