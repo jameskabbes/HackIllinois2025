@@ -22,7 +22,7 @@ Follow along with the assembly / setup instructions [here][assembly_instructions
 
 - After Step 0.3-2 on Tutorial Page 41 (PDF file page 45) run the following: `sudo apt-get install cmake`
 - do not install the ultrasonic sensor, unless you wish to make a custom add on later!
-- whenever you wish to power the raspberry pi without a USB-C power supply, read [Powering Raspberry Pi via GPIO](#powering-raspberry-pi-via-gpio)
+- whenever you wish to power the raspberry pi utilizing the battery power (instead of a USB-C power supply), read [Powering Raspberry Pi via GPIO](#powering-raspberry-pi-via-gpio)
 
 ### Powering Raspberry Pi via GPIO
 
