@@ -178,7 +178,7 @@ Click on the link for each kit to read more about it, the kit-specific prompt re
 | Ultrasonic Sensors (quantity)     | 0                             | 0                       | 1                         | 1                         | 1                         | detect a object's distance with sonar                         |
 | Audio                             | **Speaker** / Microphone      |                         |                           |                           |                           | Presence of audio components such as speakers or microphones  |
 | Line Following Sensors (quantity) | 3                             |                         | 4                         | 4                         |                           | Quantity of infrared line-following / cliff detection sensors |
-| LEDs (quantity)                   |                               |                         |                           |                           |                           | Quantity of controllable LEDs                                 |
+| LEDs (quantity)                   |                               | 4                       | 2                         |                           |                           | Quantity of controllable LEDs                                 |
 
 # Raspberry Pi
 
