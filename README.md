@@ -2,7 +2,7 @@
 
 <img
     src="./static/images/assembled_kits/the_claw.jpg"
-    alt="All car kits"
+    alt="The Claw"
     width="1000"
 />
 
