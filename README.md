@@ -161,13 +161,13 @@ fill out information regarding the fastest line follower side quest
 
 Click on the link for each kit to read more about it, the kit-specific prompt requirements, and setup instructions.
 
-| Name                          | Assembled Kit                                           | Solution Requirements          | Kit Quantity |
-| ----------------------------- | ------------------------------------------------------- | ------------------------------ | ------------ |
-| [The Boombox][boombox_branch] | ![The Boombox](./images/assembled_kits/the_boombox.png) | - camera, both servos, speaker | 10           |
-| [The Claw][claw_branch]       | ![The Claw](./images/assembled_kits/the_claw.png)       | - camera, the claw             | 6            |
-| [The Rover][rover_branch]     | ![The Rover](./images/assembled_kits/the_rover.png)     | - camera, strafe capability    | 7            |
-| [The Scout][scout_branch]     | ![The Scout](./images/assembled_kits/the_scout.png)     | - camera, ultrasonic           | 1            |
-| [The Trike][trike_branch]     | ![The Trike](./images/assembled_kits/the_trike.png)     | - camera, all servo motors     | 7            |
+| Name                          | Assembled Kit                                           | Solution Requirements                  | Kit Quantity |
+| ----------------------------- | ------------------------------------------------------- | -------------------------------------- | ------------ |
+| [The Boombox][boombox_branch] | ![The Boombox](./images/assembled_kits/the_boombox.png) | - camera, speaker                      | 10           |
+| [The Claw][claw_branch]       | ![The Claw](./images/assembled_kits/the_claw.png)       | - camera, the claw                     | 6            |
+| [The Rover][rover_branch]     | ![The Rover](./images/assembled_kits/the_rover.png)     | - camera, line-following sensors       | 7            |
+| [The Scout][scout_branch]     | ![The Scout](./images/assembled_kits/the_scout.png)     | - camera, ultrasonic, all servo motors | 1            |
+| [The Trike][trike_branch]     | ![The Trike](./images/assembled_kits/the_trike.png)     | - camera, all servo motors             | 7            |
 
 | Detail                            | [The Boombox][boombox_branch] | [The Claw][claw_branch] | [The Rover][rover_branch] | [The Scout][scout_branch] | [The Trike][trike_branch] | Item Description                                              |
 | --------------------------------- | ----------------------------- | ----------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------------------------------------------- |
