@@ -18,7 +18,7 @@ Build an autonomous vehicle utilizing at least the following components:
 
 ### Assembly Instructions
 
-Complete all the instructions from the following sections on the assembly documentation website.<br>
+Complete all the instructions from the assembly instructions tutorial.<br>
 Note the following tips:
 
 - Chapter 1 Step 2-3 (page 42 of tutorial, page 46 of PDF)
@@ -27,7 +27,7 @@ Note the following tips:
   - Make the `./Libs/pi-hardware-pwm/setup_pwm_overlay.sh` file executable:
     - Run `chmod +x setup_pwm_overlay.sh`
   - Run the executable
-    - Run `sudo ./setup_pwm_overlay.sh`
+    - Run `sudo setup_pwm_overlay.sh`
 
 - be sure to enable SPI interface on raspi-config
 - **triple check your ultrasonic sensor wiring**, they are known to burn up!
