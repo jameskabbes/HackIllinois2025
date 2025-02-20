@@ -1,10 +1,10 @@
 [jackson_innovation_studio]: https://mechse.illinois.edu/undergraduate/makerworks/jackson-innovation-studio
 [repo_base]: .
-[boombox_branch]: ./tree/the_boombox
-[claw_branch]: ./tree/the_claw
-[rover_branch]: ./tree/the_rover
-[scout_branch]: ./tree/the_scout
-[trike_branch]: ./tree/the_trike
+[boombox_branch]: https://github.com/jameskabbes/HackIllinois2025/tree/the_boombox
+[claw_branch]: https://github.com/jameskabbes/HackIllinois2025/tree/the_claw
+[rover_branch]: https://github.com/jameskabbes/HackIllinois2025/tree/the_rover
+[scout_branch]: https://github.com/jameskabbes/HackIllinois2025/tree/the_scout
+[trike_branch]: https://github.com/jameskabbes/HackIllinois2025/tree/the_trike
 
 <h1 align="center">
 John Deere | HackIllinois 2025
@@ -178,31 +178,31 @@ Click on the link for each kit to read more about it, the kit-specific prompt re
     </thead>
     <tbody>
         <tr>
-            <td><a href="./tree/the_boombox">The Boombox</a></td>
+            <td><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_boombox">The Boombox</a></td>
             <td><img src="static/images/assembled_kits/the_boombox.jpg" alt="The Boombox" style="max-height: 200px"></td>
             <td>- camera, speaker</td>
             <td>10</td>
         </tr>
         <tr>
-            <td><a href="./tree/the_claw">The Claw</a></td>
+            <td><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_claw">The Claw</a></td>
             <td><img src="static/images/assembled_kits/the_claw.jpg" alt="The Claw" style="max-height: 200px"></td>
             <td>- camera, the claw</td>
             <td>6</td>
         </tr>
         <tr>
-            <td><a href="./tree/the_rover">The Rover</a></td>
+            <td><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_rover">The Rover</a></td>
             <td><img src="static/images/assembled_kits/the_rover.jpg" alt="The Rover" style="max-height: 200px"></td>
             <td>- camera, line-following sensors</td>
             <td>7</td>
         </tr>
         <tr>
-            <td><a href="./tree/the_scout">The Scout</a></td>
+            <td><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_scout">The Scout</a></td>
             <td><img src="static/images/assembled_kits/the_scout.jpg" alt="The Scout" style="max-height: 200px"></td>
             <td>- camera, ultrasonic sensor, all servo motors</td>
             <td>1</td>
         </tr>
         <tr>
-            <td><a href="./tree/the_trike">The Trike</a></td>
+            <td><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_trike">The Trike</a></td>
             <td><img src="static/images/assembled_kits/the_trike.jpg" alt="The Trike" style="max-height: 200px"></td>
             <td>- camera, all servo motors</td>
             <td>7</td>
@@ -216,11 +216,11 @@ Click on the link for each kit to read more about it, the kit-specific prompt re
     <thead>
         <tr>
             <th>Detail</th>
-            <th><a href="./tree/the_boombox">The Boombox</a></th>
-            <th><a href="./tree/the_claw">The Claw</a></th>
-            <th><a href="./tree/the_rover">The Rover</a></th>
-            <th><a href="./tree/the_scout">The Scout</a></th>
-            <th><a href="./tree/the_trike">The Trike</a></th>
+            <th><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_boombox">The Boombox</a></th>
+            <th><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_claw">The Claw</a></th>
+            <th><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_rover">The Rover</a></th>
+            <th><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_scout">The Scout</a></th>
+            <th><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_trike">The Trike</a></th>
             <th>Item Description</th>
         </tr>
     </thead>
