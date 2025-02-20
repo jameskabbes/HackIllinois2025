@@ -1,6 +1,6 @@
 [assembly_instructions]: https://github.com/Freenove/Freenove_Three-wheeled_Smart_Car_Kit_for_Raspberry_Pi/blob/master/Tutorial.pdf
 
-# The Rover
+# The Trike
 
 ## Prompt
 
