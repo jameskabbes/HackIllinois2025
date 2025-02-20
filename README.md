@@ -2,6 +2,12 @@
 
 # The Trike
 
+<img
+    src="./static/images/assembled_kits/the_trike.jpg"
+    alt="The Trike"
+    width="1000"
+/>
+
 ## Prompt
 
 Build an autonomous vehicle utilizing at least the following components:
