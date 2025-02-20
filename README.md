@@ -1,5 +1,11 @@
 # The Claw
 
+<img
+    src="./static/images/assembled_kits/the_claw.jpg"
+    alt="All car kits"
+    width="1000"
+/>
+
 ## Prompt
 
 Build an autonomous vehicle utilizing at least the following components:
