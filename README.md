@@ -1,5 +1,11 @@
 # The Rover
 
+<img
+    src="./static/images/assembled_kits/the_rover.jpg"
+    alt="The Rover"
+    width="1000"
+/>
+
 ## Prompt
 
 Build an autonomous vehicle utilizing at least the following components:
