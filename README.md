@@ -7,6 +7,7 @@
 Build an autonomous vehicle utilizing at least the following components:
 
 - Camera
+- All servo motors
 
 ## Vehicle
 
