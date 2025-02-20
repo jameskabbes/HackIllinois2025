@@ -167,32 +167,138 @@ fill out information regarding the fastest line follower side quest
 
 Click on the link for each kit to read more about it, the kit-specific prompt requirements, and setup instructions.
 
-<style>
-  .kit-image {
-    max-height: 200px;
-  }
-</style>
-
-| Name                          | Assembled Kit                                                                                | Solution Requirements                         | Kit Quantity |
-| ----------------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------ |
-| [The Boombox][boombox_branch] | <img src="static/images/assembled_kits/the_boombox.jpg" alt="The Boombox" class="kit-image"> | - camera, speaker                             | 10           |
-| [The Claw][claw_branch]       | <img src="static/images/assembled_kits/the_claw.jpg" alt="The Claw" class="kit-image">       | - camera, the claw                            | 6            |
-| [The Rover][rover_branch]     | <img src="static/images/assembled_kits/the_rover.jpg" alt="The Rover" class="kit-image">     | - camera, line-following sensors              | 7            |
-| [The Scout][scout_branch]     | <img src="static/images/assembled_kits/the_scout.jpg" alt="The Scout" class="kit-image">     | - camera, ultrasonic sensor, all servo motors | 1            |
-| [The Trike][trike_branch]     | <img src="static/images/assembled_kits/the_trike.jpg" alt="The Trike" class="kit-image">     | - camera, all servo motors                    | 7            |
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Assembled Kit</th>
+            <th>Solution Requirements</th>
+            <th>Kit Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_boombox">The Boombox</a></td>
+            <td><img src="static/images/assembled_kits/the_boombox.jpg" alt="The Boombox" style="max-height: 200px"></td>
+            <td>- camera, speaker</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_claw">The Claw</a></td>
+            <td><img src="static/images/assembled_kits/the_claw.jpg" alt="The Claw" style="max-height: 200px"></td>
+            <td>- camera, the claw</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_rover">The Rover</a></td>
+            <td><img src="static/images/assembled_kits/the_rover.jpg" alt="The Rover" style="max-height: 200px"></td>
+            <td>- camera, line-following sensors</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_scout">The Scout</a></td>
+            <td><img src="static/images/assembled_kits/the_scout.jpg" alt="The Scout" style="max-height: 200px"></td>
+            <td>- camera, ultrasonic sensor, all servo motors</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_trike">The Trike</a></td>
+            <td><img src="static/images/assembled_kits/the_trike.jpg" alt="The Trike" style="max-height: 200px"></td>
+            <td>- camera, all servo motors</td>
+            <td>7</td>
+        </tr>
+    </tbody>
+</table>
 
 <br>
 
-| Detail                            | [The Boombox][boombox_branch] | [The Claw][claw_branch] | [The Rover][rover_branch] | [The Scout][scout_branch] | [The Trike][trike_branch] | Item Description                                              |
-| --------------------------------- | ----------------------------- | ----------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------------------------------------------- |
-| Motors (quantity)                 | 2                             | 2                       | 4                         | 2                         | 2                         | Quantity of electric motors used to power the drivetrain      |
-| Drivetrain classification         | front-steering                | tank tracks             | omnidirectional           | tank tracks               | front-steering            | Type of drivetrain mechanism used                             |
-| Camera                            |                               |                         |                           |                           |                           |                                                               |
-| Servo Motors (quantity)           | 3                             | 2                       | 2                         | 3                         | 3                         | control a gear's orientation with electrical signals          |
-| Ultrasonic Sensors (quantity)     | 0                             | 0                       | 1                         | 1                         | 1                         | detect a object's distance with sonar                         |
-| Audio                             | **Speaker** / Microphone      |                         |                           |                           |                           | Presence of audio components such as speakers or microphones  |
-| Line Following Sensors (quantity) | 3                             |                         | 4                         | 4                         |                           | Quantity of infrared line-following / cliff detection sensors |
-| LEDs (quantity)                   |                               | 4                       | 2                         |                           |                           | Quantity of controllable LEDs                                 |
+<table>
+    <thead>
+        <tr>
+            <th>Detail</th>
+            <th><a href="[boombox_branch]">The Boombox</a></th>
+            <th><a href="[claw_branch]">The Claw</a></th>
+            <th><a href="[rover_branch]">The Rover</a></th>
+            <th><a href="[scout_branch]">The Scout</a></th>
+            <th><a href="[trike_branch]">The Trike</a></th>
+            <th>Item Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Motors (quantity)</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>Quantity of electric motors used to power the drivetrain</td>
+        </tr>
+        <tr>
+            <td>Drivetrain classification</td>
+            <td>front-steering</td>
+            <td>tank tracks</td>
+            <td>omnidirectional</td>
+            <td>tank tracks</td>
+            <td>front-steering</td>
+            <td>Type of drivetrain mechanism used</td>
+        </tr>
+        <tr>
+            <td>Camera</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Servo Motors (quantity)</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3</td>
+            <td>3</td>
+            <td>Control a gear's orientation with electrical signals</td>
+        </tr>
+        <tr>
+            <td>Ultrasonic Sensors (quantity)</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>Detect a object's distance with sonar</td>
+        </tr>
+        <tr>
+            <td>Audio</td>
+            <td><strong>Speaker</strong> / Microphone</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Presence of audio components such as speakers or microphones</td>
+        </tr>
+        <tr>
+            <td>Line Following Sensors (quantity)</td>
+            <td>3</td>
+            <td></td>
+            <td>4</td>
+            <td>4</td>
+            <td></td>
+            <td>Quantity of infrared line-following / cliff detection sensors</td>
+        </tr>
+        <tr>
+            <td>LEDs (quantity)</td>
+            <td></td>
+            <td>4</td>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td>Quantity of controllable LEDs</td>
+        </tr>
+    </tbody>
+</table>
 
 # Raspberry Pi
 
