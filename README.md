@@ -18,6 +18,12 @@ John Deere | HackIllinois 2025
   />
 </p>
 
+<img
+    src="./static/images/assembled_kits/all_kits.jpg"
+    alt="All car kits"
+    width="1000"
+/>
+
 <br>
 
 # Table of Contents
@@ -161,13 +167,15 @@ fill out information regarding the fastest line follower side quest
 
 Click on the link for each kit to read more about it, the kit-specific prompt requirements, and setup instructions.
 
-| Name                          | Assembled Kit                                           | Solution Requirements                         | Kit Quantity |
-| ----------------------------- | ------------------------------------------------------- | --------------------------------------------- | ------------ |
-| [The Boombox][boombox_branch] | ![The Boombox](./images/assembled_kits/the_boombox.png) | - camera, speaker                             | 10           |
-| [The Claw][claw_branch]       | ![The Claw](./images/assembled_kits/the_claw.png)       | - camera, the claw                            | 6            |
-| [The Rover][rover_branch]     | ![The Rover](./images/assembled_kits/the_rover.png)     | - camera, line-following sensors              | 7            |
-| [The Scout][scout_branch]     | ![The Scout](./images/assembled_kits/the_scout.png)     | - camera, ultrasonic sensor, all servo motors | 1            |
-| [The Trike][trike_branch]     | ![The Trike](./images/assembled_kits/the_trike.png)     | - camera, all servo motors                    | 7            |
+| Name                          | Assembled Kit                                                                                        | Solution Requirements                         | Kit Quantity |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------ |
+| [The Boombox][boombox_branch] | <img src="static/images/assembled_kits/the_boombox.jpg" alt="The Boombox" style="max-height: 200px"> | - camera, speaker                             | 10           |
+| [The Claw][claw_branch]       | <img src="static/images/assembled_kits/the_claw.jpg" alt="The Claw" style="max-height: 200px">       | - camera, the claw                            | 6            |
+| [The Rover][rover_branch]     | <img src="static/images/assembled_kits/the_rover.jpg" alt="The Rover" style="max-height: 200px">     | - camera, line-following sensors              | 7            |
+| [The Scout][scout_branch]     | <img src="static/images/assembled_kits/the_scout.jpg" alt="The Scout" style="max-height: 200px">     | - camera, ultrasonic sensor, all servo motors | 1            |
+| [The Trike][trike_branch]     | <img src="static/images/assembled_kits/the_trike.jpg" alt="The Trike" style="max-height: 200px">     | - camera, all servo motors                    | 7            |
+
+<br>
 
 | Detail                            | [The Boombox][boombox_branch] | [The Claw][claw_branch] | [The Rover][rover_branch] | [The Scout][scout_branch] | [The Trike][trike_branch] | Item Description                                              |
 | --------------------------------- | ----------------------------- | ----------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------------------------------------------- |
