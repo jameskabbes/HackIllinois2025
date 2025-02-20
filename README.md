@@ -16,3 +16,7 @@ Build an autonomous vehicle utilizing at least the following components:
 | Assembly Instructions | https://drive.google.com/drive/folders/1gL7Cr4allhNadSSQw5e95lTrTqdYt46v?usp=sharing |
 
 ### Getting Started
+
+Complete all the instructions from the assembly instructions tutorial.
+
+TBD INFO on options for source code
