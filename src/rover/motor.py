@@ -14,9 +14,9 @@ class Motor:
     speed: types.SignedSpeed
 
     def __init__(self, config: types.MotorConfig) -> None:
-        self._ID = config['_ID']
+        self._ID = types.MotorID(config['_ID'])
         self._POLARITY = config['_POLARITY']
-        self._FORCE_HEADING = config['_FORCE_HEADING']
+        self._FORCE_HEADING = types.Heading(config['_FORCE_HEADING'])
 
     def forward(self, speed: types.UnsignedSpeed):
         self.set_speed(speed)
@@ -32,10 +32,10 @@ class Motor:
         self.speed = speed
 
     def _write_speed(self, speed: types.SignedSpeed):
-        register = Motor._BASE_REGISTER + self._ID
+        register = Motor._BASE_REGISTER + self._ID - 1
 
         if not self._POLARITY:
-            speed = -speed
+            speed: types.SignedSpeed = -speed
 
         with SMBus(constants.I2C_BUS) as bus:
 

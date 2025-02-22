@@ -1,34 +1,33 @@
 from rover import types
-from rover.types import ABSOLUTE_MAX_MOTOR_SPEED
+from rover._constants import *
 import gpiozero
 import typing
 
 I2C_BUS = 1
-N_SERVOS = 6
 
 
 DRIVETRAIN: types.DrivetrainConfig = {
     "front": {
         "left": {
-            "_ID": 0,
+            "_ID": 1,
             "_POLARITY": False,
             "_FORCE_HEADING": types.Heading(45)
 
         },
         "right": {
-            "_ID": 1,
+            "_ID": 2,
             "_POLARITY": True,
             "_FORCE_HEADING": types.Heading(135)
         }
     },
     "rear": {
         "left": {
-            "_ID": 2,
+            "_ID": 3,
             "_POLARITY": False,
             "_FORCE_HEADING": types.Heading(135)
         },
         "right": {
-            "_ID": 3,
+            "_ID": 4,
             "_POLARITY": True,
             "_FORCE_HEADING": types.Heading(45)
         }
@@ -70,7 +69,7 @@ class PixelStrip(typing.TypedDict):
     INVERT: bool
 
 
-SONAR_PIXEL_STRIP: PixelStrip = {
+PIXEL_STRIP: PixelStrip = {
     'COUNT': 2,
     'PIN': 12,
     'FREQ_HZ': 800000,
@@ -79,3 +78,8 @@ SONAR_PIXEL_STRIP: PixelStrip = {
     'CHANNEL': 0,
     'INVERT': False
 }
+
+SONAR_SYSTEM_I2C_ADDR: int = 0x77
+
+RGB_INDEX_MAPPING: dict[types.RGB_COLORS, int] = {
+    'red': 0, 'green': 1, 'blue': 2}
