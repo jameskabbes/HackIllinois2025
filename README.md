@@ -293,7 +293,7 @@ Click on the link for each kit to read more about it, the kit-specific prompt re
             <td></td>
             <td>4</td>
             <td>2</td>
-            <td>2</td>
+            <td>4</td>
             <td>1</td>
             <td>Quantity of controllable LEDs</td>
         </tr>
