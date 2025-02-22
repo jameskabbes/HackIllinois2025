@@ -3,7 +3,7 @@ from smbus2 import SMBus
 from rover import constants
 
 
-class InfraredArray:
+class LineSensors:
 
     _I2C_ADDR: typing.ClassVar[int] = 0x78
     _REGISTER: typing.ClassVar[int] = 0x01

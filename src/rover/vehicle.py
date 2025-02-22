@@ -2,7 +2,7 @@ import gpiozero
 from rover import constants
 from rover.battery import Battery
 from rover.drivetrain import Drivetrain
-from rover.infrared_array import InfraredArray
+from rover.line_sensors import LineSensors
 from rover.sonar import Sonar
 from rover.servo import Servo
 from rover.camera_system import CameraSystem
@@ -15,7 +15,7 @@ class Vehicle:
     drivetrain: Drivetrain
     key1: gpiozero.Button
     key2: gpiozero.Button
-    infrared_array: InfraredArray
+    infrared_array: LineSensors
 
     def __init__(self):
 
@@ -25,6 +25,6 @@ class Vehicle:
         self.key1 = gpiozero.Button(constants.KEY_PINS['key1'])
         self.key2 = gpiozero.Button(constants.KEY_PINS['key2'])
 
-        self.infrared_array = InfraredArray()
+        self.infrared_array = LineSensors()
         self.sonar = Sonar()
         self.camera_system = CameraSystem()

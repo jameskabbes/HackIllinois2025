@@ -1,4 +1,4 @@
-from rover.infrared_array import InfraredArray
+from rover.line_sensors import LineSensors
 import time
 import signal
 import sys
@@ -6,7 +6,7 @@ import sys
 
 if __name__ == '__main__':
 
-    infrared_array = InfraredArray()
+    infrared_array = LineSensors()
 
     def signal_handler(sig, frame):
         print('Exiting gracefully...')
