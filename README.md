@@ -263,8 +263,8 @@ Click on the link for each kit to read more about it, the kit-specific prompt re
         </tr>
         <tr>
             <td>Ultrasonic Sensors (quantity)</td>
-            <td>0</td>
-            <td>0</td>
+            <td></td>
+            <td></td>
             <td>1</td>
             <td>1</td>
             <td>1</td>
