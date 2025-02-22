@@ -272,12 +272,12 @@ Click on the link for each kit to read more about it, the kit-specific prompt re
         </tr>
         <tr>
             <td>Audio</td>
-            <td><strong>Speaker</strong> / Microphone</td>
+            <td><strong>speaker</strong> / microphone</td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td>Presence of audio components such as speakers or microphones</td>
+            <td>buzzer</td>
+            <td>Presence of audio components such as speakers, buzzers, or microphones</td>
         </tr>
         <tr>
             <td>Line Following Sensors (quantity)</td>
@@ -293,8 +293,8 @@ Click on the link for each kit to read more about it, the kit-specific prompt re
             <td></td>
             <td>4</td>
             <td>2</td>
-            <td></td>
-            <td></td>
+            <td>2</td>
+            <td>1</td>
             <td>Quantity of controllable LEDs</td>
         </tr>
     </tbody>
