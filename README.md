@@ -43,6 +43,7 @@ John Deere | HackIllinois 2025
     - [VNC](#vnc-graphical-access)
   - [Secure Copy](#secure-copy)
   - [Find IP Address](#find-ip-address)
+  - [Python on Raspberry Pi](#python-on-raspberry-pi)
   - [Other Tips](#other-tips)
     - [Connecting to Wifi](#connecting-to-wifi)
     - [Connecting to IllinoisNet_Guest](#connecting-to-illinoisnet_guest)
