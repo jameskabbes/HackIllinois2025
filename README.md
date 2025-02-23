@@ -134,8 +134,8 @@ We have parterned with the [Jackson Innovation Studio][jackson_innovation_studio
 
 John Deere engineers who work on autonomous systems professionally will be present to mentor participating teams. The space will be available to participants at the following times:
 
-- Friday, February 28: 9:00pm - midnight
-- Saturday, March 1: 11:00am - 6:00pm
+- Friday, February 28: 9:30pm - midnight
+- Saturday, March 1: 11:00am - 7:00pm
 
 The Jackson Innovation Studio is located in the basement of the Sidney Lu Mechanical Engineering Building at [1206 W Green St, Urbana, IL 61801, Room 0100](https://maps.app.goo.gl/Gp97vbMnAPboCCGY8)
 
@@ -149,7 +149,7 @@ The Jackson Innovation Studio is located in the basement of the Sidney Lu Mechan
 ## Prizes
 
 - 1st place: Additional Raspberry Pi 4B and vehicle kit for all team members
-- All award winners: One team will be selected to present their solution at [AgTech Summit](https://researchpark.illinois.edu/all-events/agtechsummit/)
+- All award winners: One team will be invited to present their solution at [AgTech Summit](https://researchpark.illinois.edu/all-events/agtechsummit/)
 
 # Side Quest - Fastest Line Follower
 
