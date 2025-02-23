@@ -28,6 +28,8 @@ John Deere | HackIllinois 2025
 # Table of Contents
 
 - [Prompt](#prompt)
+  - [Background](#background)
+  - [Prompt](#prompt-1)
   - [Submission Criteria](#submission-criteria)
   - [Scoring Criteria](#scoring-criteria)
   - [Integrity](#integrity)
@@ -53,6 +55,8 @@ John Deere | HackIllinois 2025
 <p align="center">
   <strong>Autonomous Vehicles</strong>
 </p>
+
+## Background
 
 John Deere innovates on behalf of humanity.
 
@@ -87,6 +91,8 @@ Now, let's see what you can build.
 <br>
 <br>
 
+## Prompt
+
 <p align="center">
   <strong>Build your own autonomous vehicle</strong>
 </p>
@@ -108,14 +114,14 @@ Good luck!
 
 ## Submission Criteria
 
-To be considered for awards, submissions must contain:
+To be considered for awards, do the following:
 
-- Devpost writeup
-  - Codebase
+- Submit a Devpost writeup, containing the following:
   - Problem description
   - Solution explanation
-  - Video of the vehicle working
-- A functioning vehicle during a 5-minute live demo on Sunday, March 2nd
+  - Link to Codebase
+  - Link to video of the vehicle working
+- Give a 5-minute live demo to judges on Sunday, March 2nd
 
 ## Scoring Criteria
 
@@ -131,7 +137,7 @@ You are encouraged to use any open source and AI tools you wish. Be sure to give
 
 ## John Deere Office Hours
 
-We have parterned with the [Jackson Innovation Studio][jackson_innovation_studio] on campus to give you access to any tools you might need. The studio provides access to 3D printers, multimeters, screwdrivers, tape, and anything else you might need.
+We have parterned with the [Jackson Innovation Studio][jackson_innovation_studio] on campus to give you access to any tools you might need. The studio provides access to 3D printers, multimeters, screwdrivers, tape, etc.
 
 John Deere engineers who work on autonomous systems professionally will be present to mentor participating teams. The space will be available to participants at the following times:
 
@@ -142,15 +148,15 @@ The Jackson Innovation Studio is located in the basement of the Sidney Lu Mechan
 
 ## Awards
 
-- 1st place
-- Honorable mention
+- 1st Place
 - Most Creative Solution
-- [Side Quest Champion - Fastest Line Follower](#side-quest---fastest-line-follower)
+- [Fastest Line Follower](#side-quest---fastest-line-follower)
+- Honorable Mention
 
 ## Prizes
 
-- 1st place: Additional Raspberry Pi 4B and vehicle kit for all team members
-- All award winners: One team will be invited to present their solution at [AgTech Summit](https://researchpark.illinois.edu/all-events/agtechsummit/)
+- 1st Place: Additional Raspberry Pi 4B and vehicle kit for all team members
+- All Award Winners: One team will be invited to present their solution at [AgTech Summit](https://researchpark.illinois.edu/all-events/agtechsummit/)
 
 # Side Quest - Fastest Line Follower
 
@@ -163,7 +169,7 @@ fill out information regarding the fastest line follower side quest
 
 # Kits
 
-Click on the link for each kit to read more about it, the kit-specific prompt requirements, and setup instructions.
+Click on the link for each kit (other git branches) to read more about it, the kit-specific prompt requirements, and setup instructions.
 
 <table>
     <thead>
@@ -265,7 +271,7 @@ Click on the link for each kit to read more about it, the kit-specific prompt re
             <td></td>
             <td>1</td>
             <td>1</td>
-            <td>(1)</td>
+            <td>*1</td>
             <td>Detect a object's distance with sonar</td>
         </tr>
         <tr>
@@ -334,7 +340,7 @@ You can establish an ssh connection for access to the raspberry pi terminal.
 **1a. With direct ethernet connection**
 
 - `ssh <username>@<hostname>.local`
-- `ssh pi@hackilpi1.local`
+- `ssh pi@hackil25pi1.local`
 
 **1b. While on same network**
 
