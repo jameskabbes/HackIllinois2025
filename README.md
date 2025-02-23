@@ -1,5 +1,4 @@
 [jackson_innovation_studio]: https://mechse.illinois.edu/undergraduate/makerworks/jackson-innovation-studio
-[repo_base]: .
 [boombox_branch]: https://github.com/jameskabbes/HackIllinois2025/tree/the_boombox
 [claw_branch]: https://github.com/jameskabbes/HackIllinois2025/tree/the_claw
 [rover_branch]: https://github.com/jameskabbes/HackIllinois2025/tree/the_rover
@@ -47,8 +46,6 @@ John Deere | HackIllinois 2025
   - [Other Tips](#other-tips)
     - [Connecting to Wifi](#connecting-to-wifi)
     - [Connecting to IllinoisNet_Guest](#connecting-to-illinoisnet_guest)
-
-- [Computer Vision Models](#computer-vision-models)
 
 # Prompt
 
@@ -397,30 +394,65 @@ To find the IP address of your raspberry pi, run
 
 Look for `inet`.
 
+## Python on Raspberry Pi
+
+Python comes pre-installed with Raspberry Pi OS as the default system environment. The exact version (e.g., 3.11 or later) depends on your OS release and includes some commonly used libraries. However, you may want to create your own virtual environment using `venv` for more control over package versions and dependencies.
+
+It is recommended to stay within the system Python environment if possible.
+
+### System Python Environment
+
+The pre-installed system Python environment can be extended with packages available in the Raspberry Pi OS package repositories. Use this command:
+
+```bash
+sudo apt-get install python3-{package}
+```
+
+For example, `sudo apt-get install python3-opencv` installs the opencv library in the pre-installed system Python environment.
+
+### Virtual Environment
+
+A virtual environment isolates your Python projects from the system Python, allowing independent package versions and avoiding conflicts. Here’s how to set one up:
+
+- Create a virtual environment: `python -m venv {venv_name}`
+- Activate it: `source {venv_name}/bin/activate`
+- Install packages within the environment: `pip install {package}`
+- Deactivate when done: `deactivate`
+
+For example, `pip install opencv` installs the opencv library only in the active virtual environment.
+
 ## Other Tips
 
 ### Connecting to Wifi
 
-You may wish to connect to your raspberry pi without a direct ethernet connection. Follow along for instructions on connecting to a network.
+To connect your Raspberry Pi to a wireless network without an Ethernet cable, follow these steps to configure your Wi-Fi credentials.
 
-**1. Edit the `wpa_supplicant.conf` file**
+### 1. Edit the `wpa_supplicant.conf` File
 
-`sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
+Open the Wi-Fi configuration file with a text editor:
+
+```bash
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+```
 
 **2. Add your network**
 
 Add the following lines to the file, substituing your network's SSID and password
 
 ```
+
 network={
     ssid="your_SSID"
     psk="your_password"
 }
+
 ```
 
 **3. Restart the networking service**
 
-`sudo systemctl restart networking`
+```bash
+sudo systemctl restart wpa_supplicant
+```
 
 <br>
 
