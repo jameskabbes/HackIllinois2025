@@ -267,15 +267,15 @@ Click on the link for each kit to read more about it, the kit-specific prompt re
             <td></td>
             <td>1</td>
             <td>1</td>
-            <td>1</td>
+            <td>(1)</td>
             <td>Detect a object's distance with sonar</td>
         </tr>
         <tr>
             <td>Audio</td>
             <td><strong>speaker</strong> / microphone</td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td>buzzer</td>
+            <td>buzzer</td>
             <td>buzzer</td>
             <td>Presence of audio components such as speakers, buzzers, or microphones</td>
         </tr>
