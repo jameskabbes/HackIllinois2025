@@ -12,6 +12,8 @@ if __name__ == '__main__':
             'INVERT'], constants.PIXEL_STRIP['BRIGHTNESS'], constants.PIXEL_STRIP['CHANNEL']
     )
 
+    pixel_strip.begin()
+
     def gracefully_exit(sig, frame):
         pixel_strip.setPixelColor(0, PixelColor(0, 0, 0))
         pixel_strip.setPixelColor(1, PixelColor(0, 0, 0))

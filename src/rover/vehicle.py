@@ -37,3 +37,4 @@ class Vehicle:
             constants.PIXEL_STRIP['DMA'], constants.PIXEL_STRIP[
                 'INVERT'], constants.PIXEL_STRIP['BRIGHTNESS'], constants.PIXEL_STRIP['CHANNEL']
         )
+        self.pixel_strip.begin()
