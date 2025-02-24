@@ -7,12 +7,13 @@ sonar_leds = SonarLEDS()
 
 if __name__ == '__main__':
 
-    def signal_handler(sig, frame):
+    def gracefully_exit(sig, frame):
+        sonar_leds.setRGBMode(0)
         sonar_leds.left.setPixelColor(0x000000)
         sonar_leds.right.setPixelColor(0x000000)
         exit(0)
 
-    signal.signal(signal.SIGINT, signal_handler)
+    signal.signal(signal.SIGINT, gracefully_exit)
 
     sonar_leds.setRGBMode(0)
     time.sleep(1)
@@ -52,6 +53,4 @@ if __name__ == '__main__':
     sonar_leds.startSymphony()
     time.sleep(10)
 
-    sonar_leds.left.setPixelColor(0x000000)
-    sonar_leds.right.setPixelColor(0x000000)
-    time.sleep(1)
+    gracefully_exit()
