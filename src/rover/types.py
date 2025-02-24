@@ -1,5 +1,5 @@
 import typing
-
+import gpiozero
 from rover import _constants
 from typing import TypeVar
 
@@ -78,3 +78,23 @@ class DrivetrainConfig(typing.TypedDict):
 
 
 RGB_COLORS = typing.Literal['red', 'green', 'blue']
+
+
+class CameraServoIds(typing.TypedDict):
+    pan: int
+    tilt: int
+
+
+class KeyPins(typing.TypedDict):
+    key1: gpiozero.Pin
+    key2: gpiozero.Pin
+
+
+class PixelStrip(typing.TypedDict):
+    COUNT: int
+    PIN: int
+    FREQ_HZ: int
+    DMA: int
+    BRIGHTNESS: int
+    CHANNEL: int
+    INVERT: bool

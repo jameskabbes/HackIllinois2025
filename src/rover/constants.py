@@ -35,23 +35,13 @@ DRIVETRAIN: types.DrivetrainConfig = {
 }
 
 
-class CameraServoIds(typing.TypedDict):
-    pan: int
-    tilt: int
-
-
-CAMERA_SERVOS: CameraServoIds = {
+CAMERA_SERVOS: types.CameraServoIds = {
     "pan": 1,
     "tilt": 2
 }
 
 
-class KeyPins(typing.TypedDict):
-    key1: gpiozero.Pin
-    key2: gpiozero.Pin
-
-
-KEY_PINS: KeyPins = {
+KEY_PINS: types.KeyPins = {
     "key1": 13,
     "key2": 23
 }
@@ -59,17 +49,7 @@ KEY_PINS: KeyPins = {
 BUZZER_PIN: gpiozero.Pin = 'BOARD31'
 
 
-class PixelStrip(typing.TypedDict):
-    COUNT: int
-    PIN: int
-    FREQ_HZ: int
-    DMA: int
-    BRIGHTNESS: int
-    CHANNEL: int
-    INVERT: bool
-
-
-PIXEL_STRIP: PixelStrip = {
+PIXEL_STRIP: types.PixelStrip = {
     'COUNT': 2,
     'PIN': 12,
     'FREQ_HZ': 800000,
