@@ -1,16 +1,21 @@
 import typing
 
 from rover import _constants
+from typing import TypeVar
 
 
-class Bounded[T]:
+# using TypeVar for 3.11 compatibility
+T = TypeVar('T', int, float)
+
+
+class Bounded(typing.Generic[T]):
     MIN: T
     MAX: T
 
-    def __new__(cls, value):
+    def __new__(cls, value: T) -> T:
         if not (cls.MIN <= value <= cls.MAX):
             raise ValueError(
-                f"{cls.__name__} must be {cls.MIN}>=`{cls.__name__}`<={cls.MAX}, got {value}")
+                f"{cls.__name__} must be {cls.MIN} <= `{cls.__name__}` <= {cls.MAX}, got {value}")
         return super().__new__(cls, value)
 
 
