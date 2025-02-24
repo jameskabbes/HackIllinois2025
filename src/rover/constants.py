@@ -36,8 +36,8 @@ DRIVETRAIN: types.DrivetrainConfig = {
 
 
 CAMERA_SERVOS: types.CameraServoIds = {
-    "pan": 1,
-    "tilt": 2
+    "tilt": 1,
+    "pan": 2,
 }
 
 
