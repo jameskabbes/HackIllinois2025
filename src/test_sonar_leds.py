@@ -53,4 +53,4 @@ if __name__ == '__main__':
     sonar_leds.startSymphony()
     time.sleep(10)
 
-    gracefully_exit()
+    gracefully_exit(None, None)

@@ -42,8 +42,8 @@ class SonarLEDS:
     _RGB_MODE_REGISTER: typing.ClassVar[int] = 2
 
     def __init__(self):
-        self.left = SonarLED(types.SonarLEDID(1))
-        self.right = SonarLED(types.SonarLEDID(2))
+        self.right = SonarLED(types.SonarLEDID(1))
+        self.left = SonarLED(types.SonarLEDID(2))
 
     def setRGBMode(self, mode):
         try:
