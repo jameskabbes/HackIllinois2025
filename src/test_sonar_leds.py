@@ -8,8 +8,8 @@ sonar_leds = SonarLEDS()
 if __name__ == '__main__':
 
     def signal_handler(sig, frame):
-        sonar_leds.left.setPixelColor(0)
-        sonar_leds.right.setPixelColor(0)
+        sonar_leds.left.setPixelColor(0x000000)
+        sonar_leds.right.setPixelColor(0x000000)
         exit(0)
 
     signal.signal(signal.SIGINT, signal_handler)
