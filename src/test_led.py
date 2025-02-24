@@ -18,19 +18,64 @@ if __name__ == '__main__':
         pixel_strip.show()
         exit(0)
 
-    signal.signal(signal.SIGINT, signal_handler)
+    signal.signal(signal.SIGINT, gracefully_exit)
 
-    time.sleep(1)
     pixel_strip.setPixelColor(0, PixelColor(255, 0, 0))
+    pixel_strip.setPixelColor(1, PixelColor(0, 0, 0))
+    pixel_strip.show()
+    time.sleep(1)
+
+    pixel_strip.setPixelColor(0, PixelColor(0, 255, 0))
+    pixel_strip.show()
+    time.sleep(1)
+
+    pixel_strip.setPixelColor(0, PixelColor(0, 0, 255))
+    pixel_strip.show()
+    time.sleep(1)
+
+    pixel_strip.setPixelColor(0, PixelColor(255, 255, 0))
+    pixel_strip.show()
+    time.sleep(1)
+
+    pixel_strip.setPixelColor(0, PixelColor(0, 255, 255))
+    pixel_strip.show()
+    time.sleep(1)
+
+    pixel_strip.setPixelColor(0, PixelColor(255, 0, 255))
+    pixel_strip.show()
+    time.sleep(1)
+
+    pixel_strip.setPixelColor(0, PixelColor(255, 255, 255))
+    pixel_strip.show()
+    time.sleep(1)
+
+    pixel_strip.setPixelColor(0, PixelColor(0, 0, 0))
     pixel_strip.setPixelColor(1, PixelColor(255, 0, 0))
     pixel_strip.show()
     time.sleep(1)
-    pixel_strip.setPixelColor(0, PixelColor(0, 255, 0))
+
     pixel_strip.setPixelColor(1, PixelColor(0, 255, 0))
     pixel_strip.show()
     time.sleep(1)
-    pixel_strip.setPixelColor(0, PixelColor(0, 0, 255))
+
     pixel_strip.setPixelColor(1, PixelColor(0, 0, 255))
     pixel_strip.show()
     time.sleep(1)
+
+    pixel_strip.setPixelColor(1, PixelColor(255, 255, 0))
+    pixel_strip.show()
+    time.sleep(1)
+
+    pixel_strip.setPixelColor(1, PixelColor(0, 255, 255))
+    pixel_strip.show()
+    time.sleep(1)
+
+    pixel_strip.setPixelColor(1, PixelColor(255, 0, 255))
+    pixel_strip.show()
+    time.sleep(1)
+
+    pixel_strip.setPixelColor(1, PixelColor(255, 255, 255))
+    pixel_strip.show()
+    time.sleep(1)
+
     gracefully_exit(None, None)
