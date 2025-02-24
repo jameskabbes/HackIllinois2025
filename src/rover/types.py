@@ -4,27 +4,26 @@ from rover import _constants
 from typing import TypeVar
 
 
-# using TypeVar for 3.11 compatibility
-T = TypeVar('T', int, float)
+class BoundedInt(int):
+    MIN: int
+    MAX: int
 
-
-class Bounded(typing.Generic[T]):
-    MIN: T
-    MAX: T
-
-    def __new__(cls, value: T) -> T:
+    def __new__(cls, value: int) -> int:
         if not (cls.MIN <= value <= cls.MAX):
             raise ValueError(
                 f"{cls.__name__} must be {cls.MIN} <= `{cls.__name__}` <= {cls.MAX}, got {value}")
-        return super().__new__(cls, value)
+        return int(value)
 
 
-class BoundedInt(Bounded[int]):
-    pass
+class BoundedFloat(float):
+    MIN: int
+    MAX: int
 
-
-class BoundedFloat(Bounded[float]):
-    pass
+    def __new__(cls, value: float) -> float:
+        if not (cls.MIN <= value <= cls.MAX):
+            raise ValueError(
+                f"{cls.__name__} must be {cls.MIN} <= `{cls.__name__}` <= {cls.MAX}, got {value}")
+        return float(value)
 
 
 class UnsignedSpeed(BoundedInt):
