@@ -196,7 +196,7 @@ Click on the link for each kit (other git branches) to read more about it, the k
         <tr>
             <td><a href="https://github.com/jameskabbes/HackIllinois2025/tree/the_rover">The Rover</a></td>
             <td><img src="static/images/assembled_kits/the_rover.jpg" alt="The Rover" style="max-height: 200px"></td>
-            <td>- camera, line-following sensors</td>
+            <td>- camera, camera servos, ultrasonic, ultrasonic LEDs</td>
             <td>7</td>
         </tr>
         <tr>
