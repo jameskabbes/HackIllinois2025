@@ -13,7 +13,7 @@ class Camera:
 
         try:
             self.cam = Picamera2()
-            self.cam.start(show_preview=True)
+            self.cam.start(show_preview=False)
         except:
             self.cam = None
 
