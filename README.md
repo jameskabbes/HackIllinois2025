@@ -42,6 +42,7 @@ _Note_: some of the functionality of the provided system image (servo zeroing, a
 
 - Clone the repo
 - Checkout branch `the_rover`
+- cd `HackIllinois2025`
 
 ##### 3. Install raspberry pi libraries
 
