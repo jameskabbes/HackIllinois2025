@@ -25,4 +25,10 @@ Build an autonomous vehicle utilizing at least the following components:
 
 Complete all the instructions from the assembly instructions tutorial.
 
-TBD INFO on options for source code
+#### Option 1. Manual Setup with James's source code
+
+1. Clone the repository to the raspberry pi, checkout branch `the_rover`
+2. Make a virtual enviroment: `python -m venv venv`
+3.
+
+#### Option 2. Direct from Image with Hiwonder-provided source code
