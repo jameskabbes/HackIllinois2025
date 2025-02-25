@@ -65,3 +65,13 @@ _Note_: some of the functionality of the provided system image (servo zeroing, a
 
 1. Load the provided Raspberry Pi system image onto the SD card, find the system image [here](https://drive.google.com/drive/folders/1Y9FdmRe_h6JPQ0ggJe8bi1GDT4IsESSV?usp=sharing)
 2. Follow along with all the instructions in the assembly guide
+
+### Other Notes
+
+#### Line Sensors
+
+The line sensors are known to not perform well in all lighting conditions. They excel at detecting cliffs, but not at detecting black tape.
+
+#### Wheels
+
+The wheels might pop off the motor shaft with a loose fit. A bit of hot glue from the Innovation Studio (or super glue if you're feeling dangerous) will fix it.
