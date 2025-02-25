@@ -1,6 +1,2 @@
-gpiozero
-smbus2
-picamera2
-numpy
 rpi_ws281x
 RPi.GPIO
