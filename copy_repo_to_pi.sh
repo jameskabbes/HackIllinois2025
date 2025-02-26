@@ -1,0 +1,1 @@
+scp -r ../HackIllinois2025 pi@hackil25pi1.local:/home/pi/
