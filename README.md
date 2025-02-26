@@ -395,11 +395,17 @@ Secure Copy, `scp`, allows you to transfer files between two locations, using th
 
 ## Find IP Address
 
-To find the IP address of your raspberry pi, run
+### Private IP Address
 
-`ifconfig`
+When on the same network as your Raspberry Pi, connect via the private IP address.
 
-Look for `inet`.
+To find, run `hostname -I`.
+
+### Public IP Address
+
+When not on the same network as your Raspberry Pi, connect via the public IP address.
+
+To find, run `curl ifconfig.me`
 
 ## Python on Raspberry Pi
 
