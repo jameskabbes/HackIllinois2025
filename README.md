@@ -150,22 +150,11 @@ The Jackson Innovation Studio is located in the basement of the Sidney Lu Mechan
 
 - 1st Place
 - Most Creative Solution
-- [Fastest Line Follower](#side-quest---fastest-line-follower)
 - Honorable Mention
 
 ## Prizes
 
 - 1st Place: Additional Raspberry Pi 4B and vehicle kit for all team members
-- All Award Winners: One team will be invited to present their solution at [AgTech Summit](https://researchpark.illinois.edu/all-events/agtechsummit/)
-
-# Side Quest - Fastest Line Follower
-
-TBD
-
-fill out information regarding the fastest line follower side quest
-
-- black tape on white floor
-- showcase left/right signage (colors, words, arrows, etc.)
 
 # Kits
 
