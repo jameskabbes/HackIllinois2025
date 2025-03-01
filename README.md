@@ -35,7 +35,6 @@ John Deere | HackIllinois 2025
   - [Integrity](#integrity)
   - [Jackson Innovation Studio](#jackson-innovation-studio)
 - [Kits](#kits)
-- [Side Quest - Fastest Line Follower](#side-quest---fastest-line-follower)
 - [Raspberry Pi](#raspberry-pi)
 
   - [Setup Instructions](#setup-instructions)
