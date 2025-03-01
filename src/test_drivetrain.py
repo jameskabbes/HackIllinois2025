@@ -64,3 +64,6 @@ if __name__ == '__main__':
     print('drift2')
     drivetrain.set_motion(speed=100, heading=0, angular_speed=-100)
     time.sleep(5)
+
+    drivetrain.set_motion(speed=0, heading=0, angular_speed=0)
+    time.sleep(1)
